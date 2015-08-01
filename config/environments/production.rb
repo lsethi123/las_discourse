@@ -39,8 +39,8 @@ Discourse::Application.configure do
 
     config.action_mailer.smtp_settings = settings.reject{|_, y| y.nil?}
   else
-    config.action_mailer.delivery_method = :sendmail
-    config.action_mailer.sendmail_settings = {arguments: '-i'}
+  config.action_mailer.delivery_method = :postmark
+  config.action_mailer.postmark_settings = { :api_token => "c628a8c0-3df3-48ca-a2dc-976be932f37e" }
   end
 
   # Send deprecation notices to registered listeners

@@ -13,9 +13,10 @@
     {{else}}
       {{#if bigLogoUrl}}
         <span class="valign-helper"></span>
-        <img id="site-logo" class="logo-big" src="{{unbound bigLogoUrl}}" alt="{{unbound title}}">
-      {{else}}
+	
         <h2 id="site-text-logo" class="text-logo">{{unbound title}}</h2>
+      {{else}}
+        <img id="site-logo" class="logo-big" src="{{unbound bigLogoUrl}}" alt="{{unbound title}}">
       {{/if}}
     {{/if}}
   {{/if}}
